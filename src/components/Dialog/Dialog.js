@@ -16,7 +16,6 @@ import useStyles from './styles';
 
 export default function AlertDialog({
   name,
-  id,
   urlImage,
   species,
   gender,
@@ -34,9 +33,7 @@ export default function AlertDialog({
           </div>
           <List>
             <ListItem>
-              <Typography variant="h4">
-                {id} {name}
-              </Typography>
+              <Typography variant="h4">{name}</Typography>
             </ListItem>
             <div className={classes.listContainer}>
               <ListItem>
@@ -67,13 +64,15 @@ export default function AlertDialog({
           </List>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary">
+          <Button
+            variant="outlined"
+            onClick={handleClose}
+            className={classes.btn}
+          >
             Cerrar
           </Button>
         </DialogActions>
       </Dialog>
     </div>
   );
-  // });
-  // }
 }

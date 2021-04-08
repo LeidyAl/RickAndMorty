@@ -10,4 +10,10 @@ export default makeStyles((theme) => ({
   listAvatar: {
     background: '#00B0C7',
   },
+  btn: {
+    borderRadius: 100,
+    color: '#BA2132',
+    borderColor: '#BA2132',
+    margin: 12,
+  },
 }));

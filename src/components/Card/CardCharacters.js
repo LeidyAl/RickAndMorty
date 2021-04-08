@@ -19,7 +19,9 @@ const CardCharacters = ({ urlImage, name, species, gender, location }) => {
     <Card variant="elevation" className={classes.containerCard}>
       <CardActionArea className={classes.action} onClick={handleClickOpen}>
         <Avatar src={urlImage} className={classes.image}></Avatar>
-        <Typography align="center">{name}</Typography>
+        <Typography align="center" variant="overline">
+          {name}
+        </Typography>
       </CardActionArea>
       <Dialog
         open={open}
